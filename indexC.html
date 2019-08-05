@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="indexC.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-7 mt-3">
+        <form>
+          <h3>RGB</h3>
+          <div class="form-group row mt-4 form-inline" id="rLabel">
+            <label for="rLabel" class="col-sm-1 col-form-label">R: </label>
+            <input type="rLabel" class="col-sm-8 form-control mx-sm-2" id="rLabelinput"
+              placeholder="Input an integer between 0~255">
+          </div>
+
+          <div class="form-group row mt-4 form-inline">
+            <label for="gLabel" class="col-sm-1 col-form-label">G: </label>
+            <input type="gLabel" class="col-sm-8 form-control mx-sm-2" id="gLabelinput"
+              placeholder="Input an integer between 0~255">
+          </div>
+
+          <div class="form-group row mt-4 mb-4 form-inline">
+            <label for="bLabel" class="col-sm-1 col-form-label">B: </label>
+            <input type="bLabel" class="col-sm-8 form-control mx-sm-2" id="bLabelinput"
+              placeholder="Input an integer between 0~255">
+          </div>
+
+          <div class="feedback small"></div>
+
+          <button type="submit" class="btn btn-primary mt-4">Convert</button>
+        </form>
+
+      </div>
+      <div class="col-sm-5 mt-3">
+        <h3>HEX</h3>
+        <div id="hexSlot"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="indexC.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.col-sm-5, .col-sm-7 {
+  /* outline: 1px solid steelblue; */
+  min-height: 600px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  max-height: 500px;
+}
+
+.hexColor {
+  outline: 1px solid lightgray;
+  min-height: 100px;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
