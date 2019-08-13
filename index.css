@@ -21,3 +21,13 @@ body {
   height: 200px;
   margin-top: 20px;
 }
+
+.rPreviewColor, .gPreviewColor, .bPreviewColor {
+  outline: 1px solid lightgray;
+  width: 30px;
+  height: 30px;
+}
+
+#alert {
+  width: 500px;
+}

@@ -8,7 +8,7 @@
   <title>Converter</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="indexC.css">
 </head>
 
 <body>
@@ -24,23 +24,22 @@
               placeholder="Input an integer between 0~255">
           </div>
 
-          <div class="form-group row mt-4 form-inline">
+          <div class="form-group row mt-4 form-inline" id="gLabel">
             <label for="gLabel" class="col-sm-1 col-form-label">G: </label>
             <input type="gLabel" class="col-sm-8 form-control mx-sm-2" id="gLabelinput"
               placeholder="Input an integer between 0~255">
           </div>
 
-          <div class="form-group row mt-4 mb-4 form-inline">
+          <div class="form-group row mt-4 mb-4 form-inline" id="bLabel">
             <label for="bLabel" class="col-sm-1 col-form-label">B: </label>
             <input type="bLabel" class="col-sm-8 form-control mx-sm-2" id="bLabelinput"
               placeholder="Input an integer between 0~255">
           </div>
 
-          <div class="feedback small"></div>
+          <div id="alert"></div>
 
           <button type="submit" class="btn btn-primary mt-4">Convert</button>
         </form>
-
       </div>
       <div class="col-sm-5 mt-3">
         <h3>HEX</h3>
@@ -59,7 +58,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
     integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="indexC.js"></script>
 </body>
 
 </html>
