@@ -50,6 +50,7 @@
     let bHex = rgbToHex(0, 0, bValue)
 
     if (!(inputError(rValue) || inputError(gValue) || inputError(bValue))) {
+      //once submit all slots' contents i.e. colors will change. innerHTML is being replaced once convert is clicked.
       let hexSlot = document.querySelector("#hexSlot")
       hexSlot.innerHTML = `
       <div class="card mt-4">
@@ -57,24 +58,18 @@
       </div>
       <div class="hexColor" style="background-color:#${hex}"></div>
       `
-      let rPreviewSlot = document.createElement("div")
+      let rPreviewSlot = document.querySelector("#rPreviewSlot")
       rPreviewSlot.innerHTML = `
       <div class="rPreviewColor" style="background-color:#${rHex}"></div>
       `
-      rLabel.appendChild(rPreviewSlot)
-
-      let gPreviewSlot = document.createElement("div")
+      let gPreviewSlot = document.querySelector("#gPreviewSlot")
       gPreviewSlot.innerHTML = `
       <div class="gPreviewColor" style="background-color:#${gHex}"></div>
       `
-      gLabel.appendChild(gPreviewSlot)
-
-      let bPreviewSlot = document.createElement("div")
+      let bPreviewSlot = document.querySelector("#bPreviewSlot")
       bPreviewSlot.innerHTML = `
       <div class="bPreviewColor" style="background-color:#${bHex}"></div>
       `
-      bLabel.appendChild(bPreviewSlot)
-
     }
   }
 
