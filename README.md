@@ -1,5 +1,5 @@
 # RGB-to-HEX-Converter
-A simple web application for converting color codes between RGB and HEX 
+A simple web application for converting color codes between RGB and HEX <br>
 Take a look: https://ting11222001.github.io/RGB-to-HEX-Converter/
 
 ## Features
